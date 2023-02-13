@@ -18,6 +18,8 @@ public struct DownPeriscopeCLI: ParsableCommand {
 
     public static let configuration = CommandConfiguration(
         commandName: "down",
+        abstract: "Download a file!",
+        discussion: "Given a valid resource URL, downloads to an optional destination.\nDefaults to the current directory, with the resource name as the file name.",
         version: Self.version
     )
 

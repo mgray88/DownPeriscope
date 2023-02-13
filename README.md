@@ -13,7 +13,7 @@
 - From the command line:
 - Run `./build` (always verify scripts before running)
 - The CLI executable will be output to ```pwd``/bin`, which will be appended to `$PATH`
-- Run `down` to see 
+- Run `./bin/down --help` to see documentation  
 
 ## How to test
 - Open in Xcode (`xed .`)
@@ -45,7 +45,9 @@
   - This particular issue 
   
 ### Improvements
-- Have `Periscope` and `DefaultRepository` 
+- Have `Periscope` and `DefaultRepository` better handle their DispatchQueues
+- Add blocking functions to `Periscope` that abstract away the RxSwift for ease of use from the command line
+- Show throughput as a human readable string (currently B/s)
   
 ### Distractions (for more fun)
 - Use `RunLoop`? Or `Process`? Instead of `Semaphore`
