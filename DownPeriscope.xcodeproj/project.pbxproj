@@ -7,58 +7,129 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		272ED2D1298DC20700AC4634 /* DownPeriscopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2D0298DC20700AC4634 /* DownPeriscopeApp.swift */; };
-		272ED2D3298DC20700AC4634 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2D2298DC20700AC4634 /* ContentView.swift */; };
-		272ED2D5298DC20900AC4634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272ED2D4298DC20900AC4634 /* Assets.xcassets */; };
-		272ED2D8298DC20900AC4634 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272ED2D7298DC20900AC4634 /* Preview Assets.xcassets */; };
 		272ED2E3298DC20A00AC4634 /* DownPeriscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2E2298DC20A00AC4634 /* DownPeriscopeTests.swift */; };
 		272ED2ED298DC20A00AC4634 /* DownPeriscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2EC298DC20A00AC4634 /* DownPeriscopeUITests.swift */; };
 		272ED2EF298DC20A00AC4634 /* DownPeriscopeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2EE298DC20A00AC4634 /* DownPeriscopeUITestsLaunchTests.swift */; };
+		272ED323298EFB7200AC4634 /* DownPeriscopeCLI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED322298EFB7200AC4634 /* DownPeriscopeCLI.swift */; };
+		272ED331298EFC3B00AC4634 /* DownPeriscopeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED330298EFC3B00AC4634 /* DownPeriscopeApp.swift */; };
+		272ED333298EFC3B00AC4634 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED332298EFC3B00AC4634 /* ContentView.swift */; };
+		272ED335298EFC3D00AC4634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272ED334298EFC3D00AC4634 /* Assets.xcassets */; };
+		272ED338298EFC3D00AC4634 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272ED337298EFC3D00AC4634 /* Preview Assets.xcassets */; };
+		272ED33E298EFCF100AC4634 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2FF298ED69200AC4634 /* ViewModel.swift */; };
+		272ED34F298F016D00AC4634 /* libDownPeriscope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272ED345298F015300AC4634 /* libDownPeriscope.a */; };
+		272ED352298F019D00AC4634 /* PeriscopeFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED302298EDF7000AC4634 /* PeriscopeFile.swift */; };
+		272ED353298F01A000AC4634 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED304298EE04D00AC4634 /* Repository.swift */; };
+		272ED355298F033600AC4634 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 272ED354298F033600AC4634 /* Alamofire */; };
+		272ED356298F038000AC4634 /* libDownPeriscope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272ED345298F015300AC4634 /* libDownPeriscope.a */; };
+		2786FB32298F04AE00312F21 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 2786FB31298F04AE00312F21 /* ArgumentParser */; };
+		2786FB3A298F119600312F21 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786FB37298F119600312F21 /* Utilities.swift */; };
+		2786FB3B298F119600312F21 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786FB38298F119600312F21 /* Progress.swift */; };
+		2786FB3C298F119600312F21 /* ProgressElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786FB39298F119600312F21 /* ProgressElements.swift */; };
+		2786FB41298F186400312F21 /* Fork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786FB40298F186400312F21 /* Fork.swift */; };
+		2786FB43298F18A900312F21 /* Trap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2786FB42298F18A900312F21 /* Trap.swift */; };
+		2786FB4D298F248D00312F21 /* SystemPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 2786FB4C298F248D00312F21 /* SystemPackage */; };
+		2786FB52298F27CF00312F21 /* libDownPeriscope.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272ED345298F015300AC4634 /* libDownPeriscope.a */; };
+		27A8912229999F0600E3FBEE /* Periscope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A8912129999F0600E3FBEE /* Periscope.swift */; };
+		27A891252999A1BA00E3FBEE /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A891242999A1BA00E3FBEE /* MockRepository.swift */; };
+		27A891282999A25500E3FBEE /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 27A891272999A25500E3FBEE /* Nimble */; };
+		27A8912D2999A30B00E3FBEE /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 27A8912C2999A30B00E3FBEE /* RxRelay */; };
+		27A8912F2999A30B00E3FBEE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 27A8912E2999A30B00E3FBEE /* RxSwift */; };
+		27A891312999A30B00E3FBEE /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 27A891302999A30B00E3FBEE /* RxTest */; };
+		27A891342999A50200E3FBEE /* BlockingObservable+Completable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A891332999A50200E3FBEE /* BlockingObservable+Completable.swift */; };
+		27A891382999AB6B00E3FBEE /* RxSwift.mapTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A891372999AB6B00E3FBEE /* RxSwift.mapTo.swift */; };
+		27A8913A2999B40900E3FBEE /* PeriscopeFile+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A891392999B40900E3FBEE /* PeriscopeFile+Stub.swift */; };
+		27A8913D2999D10800E3FBEE /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 27A8913C2999D10800E3FBEE /* RxBlocking */; };
+		27A8913F2999E09B00E3FBEE /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 27A8913E2999E09B00E3FBEE /* RxBlocking */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		272ED2DF298DC20A00AC4634 /* PBXContainerItemProxy */ = {
+		272ED350298F016D00AC4634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 272ED2C5298DC20700AC4634 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 272ED2CC298DC20700AC4634;
+			remoteGlobalIDString = 272ED344298F015300AC4634;
 			remoteInfo = DownPeriscope;
 		};
-		272ED2E9298DC20A00AC4634 /* PBXContainerItemProxy */ = {
+		272ED359298F03A300AC4634 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 272ED2C5298DC20700AC4634 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 272ED2CC298DC20700AC4634;
+			remoteGlobalIDString = 272ED344298F015300AC4634;
+			remoteInfo = DownPeriscope;
+		};
+		2786FB50298F27C100312F21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 272ED2C5298DC20700AC4634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 272ED344298F015300AC4634;
 			remoteInfo = DownPeriscope;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		272ED31E298EFB7200AC4634 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		2786FB47298F23D700312F21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		272ED2CD298DC20700AC4634 /* DownPeriscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownPeriscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		272ED2D0298DC20700AC4634 /* DownPeriscopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownPeriscopeApp.swift; sourceTree = "<group>"; };
-		272ED2D2298DC20700AC4634 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		272ED2D4298DC20900AC4634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		272ED2D7298DC20900AC4634 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		272ED2D9298DC20900AC4634 /* DownPeriscope.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DownPeriscope.entitlements; sourceTree = "<group>"; };
 		272ED2DE298DC20A00AC4634 /* DownPeriscopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownPeriscopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272ED2E2298DC20A00AC4634 /* DownPeriscopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownPeriscopeTests.swift; sourceTree = "<group>"; };
 		272ED2E8298DC20A00AC4634 /* DownPeriscopeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DownPeriscopeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272ED2EC298DC20A00AC4634 /* DownPeriscopeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownPeriscopeUITests.swift; sourceTree = "<group>"; };
 		272ED2EE298DC20A00AC4634 /* DownPeriscopeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownPeriscopeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		272ED2FF298ED69200AC4634 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		272ED302298EDF7000AC4634 /* PeriscopeFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriscopeFile.swift; sourceTree = "<group>"; };
+		272ED304298EE04D00AC4634 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		272ED320298EFB7200AC4634 /* DownPeriscopeCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DownPeriscopeCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		272ED322298EFB7200AC4634 /* DownPeriscopeCLI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownPeriscopeCLI.swift; sourceTree = "<group>"; };
+		272ED32E298EFC3A00AC4634 /* DownPeriscopeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DownPeriscopeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		272ED330298EFC3B00AC4634 /* DownPeriscopeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownPeriscopeApp.swift; sourceTree = "<group>"; };
+		272ED332298EFC3B00AC4634 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		272ED334298EFC3D00AC4634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		272ED337298EFC3D00AC4634 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		272ED339298EFC3D00AC4634 /* DownPeriscopeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DownPeriscopeApp.entitlements; sourceTree = "<group>"; };
+		272ED345298F015300AC4634 /* libDownPeriscope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDownPeriscope.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2786FB37298F119600312F21 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2786FB38298F119600312F21 /* Progress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		2786FB39298F119600312F21 /* ProgressElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressElements.swift; sourceTree = "<group>"; };
+		2786FB3D298F11B300312F21 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		2786FB3E298F11C200312F21 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2786FB40298F186400312F21 /* Fork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fork.swift; sourceTree = "<group>"; };
+		2786FB42298F18A900312F21 /* Trap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trap.swift; sourceTree = "<group>"; };
+		27A8912129999F0600E3FBEE /* Periscope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Periscope.swift; sourceTree = "<group>"; };
+		27A891242999A1BA00E3FBEE /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
+		27A891332999A50200E3FBEE /* BlockingObservable+Completable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BlockingObservable+Completable.swift"; sourceTree = "<group>"; };
+		27A891372999AB6B00E3FBEE /* RxSwift.mapTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift.mapTo.swift; sourceTree = "<group>"; };
+		27A891392999B40900E3FBEE /* PeriscopeFile+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeriscopeFile+Stub.swift"; sourceTree = "<group>"; };
+		27A8913B2999BD5200E3FBEE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		272ED2CA298DC20700AC4634 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		272ED2DB298DC20A00AC4634 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2786FB52298F27CF00312F21 /* libDownPeriscope.a in Frameworks */,
+				27A8913D2999D10800E3FBEE /* RxBlocking in Frameworks */,
+				27A891312999A30B00E3FBEE /* RxTest in Frameworks */,
+				27A891282999A25500E3FBEE /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,52 +140,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		272ED31D298EFB7200AC4634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2786FB32298F04AE00312F21 /* ArgumentParser in Frameworks */,
+				272ED34F298F016D00AC4634 /* libDownPeriscope.a in Frameworks */,
+				2786FB4D298F248D00312F21 /* SystemPackage in Frameworks */,
+				27A8913F2999E09B00E3FBEE /* RxBlocking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272ED32B298EFC3A00AC4634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272ED356298F038000AC4634 /* libDownPeriscope.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272ED343298F015300AC4634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A8912D2999A30B00E3FBEE /* RxRelay in Frameworks */,
+				272ED355298F033600AC4634 /* Alamofire in Frameworks */,
+				27A8912F2999A30B00E3FBEE /* RxSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		272ED2C4298DC20700AC4634 = {
 			isa = PBXGroup;
 			children = (
-				272ED2CF298DC20700AC4634 /* DownPeriscope */,
+				27A8913B2999BD5200E3FBEE /* README.md */,
+				272ED346298F015300AC4634 /* DownPeriscope */,
 				272ED2E1298DC20A00AC4634 /* DownPeriscopeTests */,
 				272ED2EB298DC20A00AC4634 /* DownPeriscopeUITests */,
+				272ED321298EFB7200AC4634 /* DownPeriscopeCLI */,
+				272ED32F298EFC3B00AC4634 /* DownPeriscopeApp */,
 				272ED2CE298DC20700AC4634 /* Products */,
+				272ED34E298F016D00AC4634 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		272ED2CE298DC20700AC4634 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				272ED2CD298DC20700AC4634 /* DownPeriscope.app */,
 				272ED2DE298DC20A00AC4634 /* DownPeriscopeTests.xctest */,
 				272ED2E8298DC20A00AC4634 /* DownPeriscopeUITests.xctest */,
+				272ED320298EFB7200AC4634 /* DownPeriscopeCLI */,
+				272ED32E298EFC3A00AC4634 /* DownPeriscopeApp.app */,
+				272ED345298F015300AC4634 /* libDownPeriscope.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		272ED2CF298DC20700AC4634 /* DownPeriscope */ = {
-			isa = PBXGroup;
-			children = (
-				272ED2D0298DC20700AC4634 /* DownPeriscopeApp.swift */,
-				272ED2D2298DC20700AC4634 /* ContentView.swift */,
-				272ED2D4298DC20900AC4634 /* Assets.xcassets */,
-				272ED2D9298DC20900AC4634 /* DownPeriscope.entitlements */,
-				272ED2D6298DC20900AC4634 /* Preview Content */,
-			);
-			path = DownPeriscope;
-			sourceTree = "<group>";
-		};
-		272ED2D6298DC20900AC4634 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				272ED2D7298DC20900AC4634 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		272ED2E1298DC20A00AC4634 /* DownPeriscopeTests */ = {
 			isa = PBXGroup;
 			children = (
+				27A891322999A4B300E3FBEE /* Extensions */,
+				27A891232999A1A900E3FBEE /* Mocks */,
 				272ED2E2298DC20A00AC4634 /* DownPeriscopeTests.swift */,
 			);
 			path = DownPeriscopeTests;
@@ -129,26 +217,114 @@
 			path = DownPeriscopeUITests;
 			sourceTree = "<group>";
 		};
+		272ED321298EFB7200AC4634 /* DownPeriscopeCLI */ = {
+			isa = PBXGroup;
+			children = (
+				2786FB3F298F185900312F21 /* Utilities */,
+				2786FB36298F110B00312F21 /* Progress */,
+				272ED322298EFB7200AC4634 /* DownPeriscopeCLI.swift */,
+			);
+			path = DownPeriscopeCLI;
+			sourceTree = "<group>";
+		};
+		272ED32F298EFC3B00AC4634 /* DownPeriscopeApp */ = {
+			isa = PBXGroup;
+			children = (
+				272ED330298EFC3B00AC4634 /* DownPeriscopeApp.swift */,
+				272ED332298EFC3B00AC4634 /* ContentView.swift */,
+				272ED2FF298ED69200AC4634 /* ViewModel.swift */,
+				272ED334298EFC3D00AC4634 /* Assets.xcassets */,
+				272ED339298EFC3D00AC4634 /* DownPeriscopeApp.entitlements */,
+				272ED336298EFC3D00AC4634 /* Preview Content */,
+			);
+			path = DownPeriscopeApp;
+			sourceTree = "<group>";
+		};
+		272ED336298EFC3D00AC4634 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				272ED337298EFC3D00AC4634 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		272ED346298F015300AC4634 /* DownPeriscope */ = {
+			isa = PBXGroup;
+			children = (
+				27A891362999AB5700E3FBEE /* Extensions */,
+				272ED302298EDF7000AC4634 /* PeriscopeFile.swift */,
+				272ED304298EE04D00AC4634 /* Repository.swift */,
+				27A8912129999F0600E3FBEE /* Periscope.swift */,
+			);
+			path = DownPeriscope;
+			sourceTree = "<group>";
+		};
+		272ED34E298F016D00AC4634 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2786FB36298F110B00312F21 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				2786FB3D298F11B300312F21 /* LICENSE.txt */,
+				2786FB3E298F11C200312F21 /* README.md */,
+				2786FB38298F119600312F21 /* Progress.swift */,
+				2786FB39298F119600312F21 /* ProgressElements.swift */,
+				2786FB37298F119600312F21 /* Utilities.swift */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		2786FB3F298F185900312F21 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2786FB40298F186400312F21 /* Fork.swift */,
+				2786FB42298F18A900312F21 /* Trap.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		27A891232999A1A900E3FBEE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				27A891242999A1BA00E3FBEE /* MockRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		27A891322999A4B300E3FBEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27A891332999A50200E3FBEE /* BlockingObservable+Completable.swift */,
+				27A891392999B40900E3FBEE /* PeriscopeFile+Stub.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27A891362999AB5700E3FBEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27A891372999AB6B00E3FBEE /* RxSwift.mapTo.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		272ED2CC298DC20700AC4634 /* DownPeriscope */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 272ED2F2298DC20A00AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscope" */;
-			buildPhases = (
-				272ED2C9298DC20700AC4634 /* Sources */,
-				272ED2CA298DC20700AC4634 /* Frameworks */,
-				272ED2CB298DC20700AC4634 /* Resources */,
+/* Begin PBXHeadersBuildPhase section */
+		272ED341298F015300AC4634 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DownPeriscope;
-			productName = DownPeriscope;
-			productReference = 272ED2CD298DC20700AC4634 /* DownPeriscope.app */;
-			productType = "com.apple.product-type.application";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
 		272ED2DD298DC20A00AC4634 /* DownPeriscopeTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 272ED2F5298DC20A00AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscopeTests" */;
@@ -160,9 +336,14 @@
 			buildRules = (
 			);
 			dependencies = (
-				272ED2E0298DC20A00AC4634 /* PBXTargetDependency */,
+				2786FB51298F27C100312F21 /* PBXTargetDependency */,
 			);
 			name = DownPeriscopeTests;
+			packageProductDependencies = (
+				27A891272999A25500E3FBEE /* Nimble */,
+				27A891302999A30B00E3FBEE /* RxTest */,
+				27A8913C2999D10800E3FBEE /* RxBlocking */,
+			);
 			productName = DownPeriscopeTests;
 			productReference = 272ED2DE298DC20A00AC4634 /* DownPeriscopeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -178,12 +359,77 @@
 			buildRules = (
 			);
 			dependencies = (
-				272ED2EA298DC20A00AC4634 /* PBXTargetDependency */,
 			);
 			name = DownPeriscopeUITests;
 			productName = DownPeriscopeUITests;
 			productReference = 272ED2E8298DC20A00AC4634 /* DownPeriscopeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		272ED31F298EFB7200AC4634 /* DownPeriscopeCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272ED324298EFB7200AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscopeCLI" */;
+			buildPhases = (
+				272ED31C298EFB7200AC4634 /* Sources */,
+				272ED31D298EFB7200AC4634 /* Frameworks */,
+				272ED31E298EFB7200AC4634 /* CopyFiles */,
+				2786FB47298F23D700312F21 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				272ED351298F016D00AC4634 /* PBXTargetDependency */,
+			);
+			name = DownPeriscopeCLI;
+			packageProductDependencies = (
+				2786FB31298F04AE00312F21 /* ArgumentParser */,
+				2786FB4C298F248D00312F21 /* SystemPackage */,
+				27A8913E2999E09B00E3FBEE /* RxBlocking */,
+			);
+			productName = DownPeriscopeCLI;
+			productReference = 272ED320298EFB7200AC4634 /* DownPeriscopeCLI */;
+			productType = "com.apple.product-type.tool";
+		};
+		272ED32D298EFC3A00AC4634 /* DownPeriscopeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272ED33A298EFC3D00AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscopeApp" */;
+			buildPhases = (
+				272ED32A298EFC3A00AC4634 /* Sources */,
+				272ED32B298EFC3A00AC4634 /* Frameworks */,
+				272ED32C298EFC3A00AC4634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				272ED35A298F03A300AC4634 /* PBXTargetDependency */,
+			);
+			name = DownPeriscopeApp;
+			packageProductDependencies = (
+			);
+			productName = DownPeriscopeApp;
+			productReference = 272ED32E298EFC3A00AC4634 /* DownPeriscopeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		272ED344298F015300AC4634 /* DownPeriscope */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 272ED34B298F015300AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscope" */;
+			buildPhases = (
+				272ED341298F015300AC4634 /* Headers */,
+				272ED342298F015300AC4634 /* Sources */,
+				272ED343298F015300AC4634 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DownPeriscope;
+			packageProductDependencies = (
+				272ED354298F033600AC4634 /* Alamofire */,
+				27A8912C2999A30B00E3FBEE /* RxRelay */,
+				27A8912E2999A30B00E3FBEE /* RxSwift */,
+			);
+			productName = DownPeriscope;
+			productReference = 272ED345298F015300AC4634 /* libDownPeriscope.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,16 +441,21 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					272ED2CC298DC20700AC4634 = {
-						CreatedOnToolsVersion = 14.2;
-					};
 					272ED2DD298DC20A00AC4634 = {
 						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 272ED2CC298DC20700AC4634;
 					};
 					272ED2E7298DC20A00AC4634 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 272ED2CC298DC20700AC4634;
+					};
+					272ED31F298EFB7200AC4634 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					272ED32D298EFC3A00AC4634 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					272ED344298F015300AC4634 = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -217,11 +468,20 @@
 				Base,
 			);
 			mainGroup = 272ED2C4298DC20700AC4634;
+			packageReferences = (
+				272ED2FB298DC57800AC4634 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2786FB30298F04AE00312F21 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				2786FB4B298F248D00312F21 /* XCRemoteSwiftPackageReference "swift-system" */,
+				27A891262999A25500E3FBEE /* XCRemoteSwiftPackageReference "Nimble" */,
+				27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 272ED2CE298DC20700AC4634 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				272ED2CC298DC20700AC4634 /* DownPeriscope */,
+				272ED344298F015300AC4634 /* DownPeriscope */,
+				272ED31F298EFB7200AC4634 /* DownPeriscopeCLI */,
+				272ED32D298EFC3A00AC4634 /* DownPeriscopeApp */,
 				272ED2DD298DC20A00AC4634 /* DownPeriscopeTests */,
 				272ED2E7298DC20A00AC4634 /* DownPeriscopeUITests */,
 			);
@@ -229,15 +489,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		272ED2CB298DC20700AC4634 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				272ED2D8298DC20900AC4634 /* Preview Assets.xcassets in Resources */,
-				272ED2D5298DC20900AC4634 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		272ED2DC298DC20A00AC4634 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,23 +503,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		272ED2C9298DC20700AC4634 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		272ED32C298EFC3A00AC4634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				272ED2D3298DC20700AC4634 /* ContentView.swift in Sources */,
-				272ED2D1298DC20700AC4634 /* DownPeriscopeApp.swift in Sources */,
+				272ED338298EFC3D00AC4634 /* Preview Assets.xcassets in Resources */,
+				272ED335298EFC3D00AC4634 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		272ED2DA298DC20A00AC4634 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				272ED2E3298DC20A00AC4634 /* DownPeriscopeTests.swift in Sources */,
+				27A891252999A1BA00E3FBEE /* MockRepository.swift in Sources */,
+				27A8913A2999B40900E3FBEE /* PeriscopeFile+Stub.swift in Sources */,
+				27A891342999A50200E3FBEE /* BlockingObservable+Completable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,18 +535,57 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		272ED31C298EFB7200AC4634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2786FB43298F18A900312F21 /* Trap.swift in Sources */,
+				2786FB3B298F119600312F21 /* Progress.swift in Sources */,
+				2786FB3A298F119600312F21 /* Utilities.swift in Sources */,
+				2786FB41298F186400312F21 /* Fork.swift in Sources */,
+				272ED323298EFB7200AC4634 /* DownPeriscopeCLI.swift in Sources */,
+				2786FB3C298F119600312F21 /* ProgressElements.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272ED32A298EFC3A00AC4634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				272ED333298EFC3B00AC4634 /* ContentView.swift in Sources */,
+				272ED33E298EFCF100AC4634 /* ViewModel.swift in Sources */,
+				272ED331298EFC3B00AC4634 /* DownPeriscopeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		272ED342298F015300AC4634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27A891382999AB6B00E3FBEE /* RxSwift.mapTo.swift in Sources */,
+				272ED352298F019D00AC4634 /* PeriscopeFile.swift in Sources */,
+				27A8912229999F0600E3FBEE /* Periscope.swift in Sources */,
+				272ED353298F01A000AC4634 /* Repository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		272ED2E0298DC20A00AC4634 /* PBXTargetDependency */ = {
+		272ED351298F016D00AC4634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 272ED2CC298DC20700AC4634 /* DownPeriscope */;
-			targetProxy = 272ED2DF298DC20A00AC4634 /* PBXContainerItemProxy */;
+			target = 272ED344298F015300AC4634 /* DownPeriscope */;
+			targetProxy = 272ED350298F016D00AC4634 /* PBXContainerItemProxy */;
 		};
-		272ED2EA298DC20A00AC4634 /* PBXTargetDependency */ = {
+		272ED35A298F03A300AC4634 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 272ED2CC298DC20700AC4634 /* DownPeriscope */;
-			targetProxy = 272ED2E9298DC20A00AC4634 /* PBXContainerItemProxy */;
+			target = 272ED344298F015300AC4634 /* DownPeriscope */;
+			targetProxy = 272ED359298F03A300AC4634 /* PBXContainerItemProxy */;
+		};
+		2786FB51298F27C100312F21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 272ED344298F015300AC4634 /* DownPeriscope */;
+			targetProxy = 2786FB50298F27C100312F21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -410,65 +703,10 @@
 			};
 			name = Release;
 		};
-		272ED2F3298DC20A00AC4634 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DownPeriscope/DownPeriscope.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DownPeriscope/Preview Content\"";
-				DEVELOPMENT_TEAM = 6BRY3H7A8B;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = is.digital.DownPeriscope;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		272ED2F4298DC20A00AC4634 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = DownPeriscope/DownPeriscope.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DownPeriscope/Preview Content\"";
-				DEVELOPMENT_TEAM = 6BRY3H7A8B;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = is.digital.DownPeriscope;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		272ED2F6298DC20A00AC4634 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6BRY3H7A8B;
@@ -479,7 +717,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownPeriscope.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DownPeriscope";
 			};
 			name = Debug;
 		};
@@ -487,7 +724,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6BRY3H7A8B;
@@ -498,7 +734,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DownPeriscope.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DownPeriscope";
 			};
 			name = Release;
 		};
@@ -536,6 +771,114 @@
 			};
 			name = Release;
 		};
+		272ED325298EFB7200AC4634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = 6BRY3H7A8B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = is.digital.downperiscope;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		272ED326298EFB7200AC4634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = 6BRY3H7A8B;
+				DSTROOT = /;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = is.digital.downperiscope;
+				PRODUCT_NAME = down;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		272ED33B298EFC3D00AC4634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DownPeriscopeApp/DownPeriscopeApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DownPeriscopeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6BRY3H7A8B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.digital.DownPeriscopeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		272ED33C298EFC3D00AC4634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DownPeriscopeApp/DownPeriscopeApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DownPeriscopeApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 6BRY3H7A8B;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = is.digital.DownPeriscopeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		272ED34C298F015300AC4634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6BRY3H7A8B;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)Lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		272ED34D298F015300AC4634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6BRY3H7A8B;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)Lib";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -544,15 +887,6 @@
 			buildConfigurations = (
 				272ED2F0298DC20A00AC4634 /* Debug */,
 				272ED2F1298DC20A00AC4634 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		272ED2F2298DC20A00AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscope" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				272ED2F3298DC20A00AC4634 /* Debug */,
-				272ED2F4298DC20A00AC4634 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -575,7 +909,125 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		272ED324298EFB7200AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscopeCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272ED325298EFB7200AC4634 /* Debug */,
+				272ED326298EFB7200AC4634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		272ED33A298EFC3D00AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscopeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272ED33B298EFC3D00AC4634 /* Debug */,
+				272ED33C298EFC3D00AC4634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		272ED34B298F015300AC4634 /* Build configuration list for PBXNativeTarget "DownPeriscope" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				272ED34C298F015300AC4634 /* Debug */,
+				272ED34D298F015300AC4634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		272ED2FB298DC57800AC4634 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		2786FB30298F04AE00312F21 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		2786FB4B298F248D00312F21 /* XCRemoteSwiftPackageReference "swift-system" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-system.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		27A891262999A25500E3FBEE /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.1;
+			};
+		};
+		27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		272ED354298F033600AC4634 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 272ED2FB298DC57800AC4634 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		2786FB31298F04AE00312F21 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2786FB30298F04AE00312F21 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		2786FB4C298F248D00312F21 /* SystemPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2786FB4B298F248D00312F21 /* XCRemoteSwiftPackageReference "swift-system" */;
+			productName = SystemPackage;
+		};
+		27A891272999A25500E3FBEE /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A891262999A25500E3FBEE /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		27A8912C2999A30B00E3FBEE /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		27A8912E2999A30B00E3FBEE /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		27A891302999A30B00E3FBEE /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		27A8913C2999D10800E3FBEE /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		27A8913E2999E09B00E3FBEE /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 272ED2C5298DC20700AC4634 /* Project object */;
 }

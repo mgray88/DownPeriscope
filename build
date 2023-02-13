@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+xcodebuild install -scheme DownPeriscopeCLI -configuration Release DSTROOT=`pwd` INSTALL_PATH='/bin'
+export PATH="${PATH}:`pwd`/bin"
+
