@@ -42,6 +42,14 @@ public struct DownPeriscopeCLI: ParsableCommand {
         let continuation: Observable<PeriscopeFile>
         if let url {
             continuation = periscope.validate(source: url)
+                .map({ file in
+                    if (file.size / 1e9) > 1 {
+                        if !booleanPrompt("Large file (> 1GB). Continue?") {
+                            throw ExitCode.success
+                        }
+                    }
+                    return file
+                })
         } else {
             continuation = periscope.restart().asObservable()
                 .ifEmpty(
