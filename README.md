@@ -21,7 +21,7 @@
 
 ## Trade-offs made
 - Started out using Alamofire, as I was most familiar with that library for networking. Half way through realized the `Progress` object updated and returned by Alamofire is incomplete. It does not contain information that may be provided by the underlying NSURLSession; `throughput`, `estimatedTimeRemaining`.
-- Resource URLs need to support HEAD requests, for validating URLs and getting file size. It seemed like the best idea, until I tried a URL that didn't support HEAD requests. So we can put that under improvements
+- ~~Resource URLs need to support HEAD requests, for validating URLs and getting file size. It seemed like the best idea, until I tried a URL that didn't support HEAD requests. So we can put that under improvements~~
 
 ## Library Dependencies
 - *Alamofire*: Chosen for familiarity of using it for networking in Swift
@@ -46,10 +46,10 @@
   - This particular issue 
   
 ### Improvements
-- Support resources URLs that don't respond to HEAD requests
-- Have `Periscope` and `DefaultRepository` better handle their DispatchQueues
-- Add blocking functions to `Periscope` that abstract away the RxSwift for ease of use from the command line
-- Show throughput as a human readable string (currently B/s)
+- [x] Support resources URLs that don't respond to HEAD requests
+- [ ] Have `Periscope` and `DefaultRepository` better handle their DispatchQueues
+- [ ] Add blocking functions to `Periscope` that abstract away the RxSwift for ease of use from the command line
+- [ ] Show throughput as a human readable string (currently B/s)
   
 ### Distractions (for more fun)
 - Use `RunLoop`? Or `Process`? Instead of `Semaphore`
