@@ -11,11 +11,6 @@ import RxSwift
 
 final class MockRepository: Repository {
 
-    var validateResponse: Observable<PeriscopeFile>!
-    func validate(url: URL) -> Observable<PeriscopeFile> {
-        return validateResponse
-    }
-
     var downloadResponse: Observable<PeriscopeFile>!
     func download(file: PeriscopeFile) -> Observable<PeriscopeFile> {
         return downloadResponse

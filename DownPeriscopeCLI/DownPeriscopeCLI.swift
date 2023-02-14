@@ -29,10 +29,14 @@ public struct DownPeriscopeCLI: ParsableCommand {
     @Option(name: [.long, .short])
     public var destination: String? = nil
 
+    @Option(name: [.long, .customShort("l")])
+    public var allowLarge: Bool = false
+
     public init() {
     }
 
     public func run() throws {
+        var allowLarge = self.allowLarge
         let periscope = Periscope()
         let semaphore = DispatchSemaphore(value: 0)
         Trap.handle(signal: .interrupt) {sig in
@@ -42,14 +46,6 @@ public struct DownPeriscopeCLI: ParsableCommand {
         let continuation: Observable<PeriscopeFile>
         if let url {
             continuation = periscope.validate(source: url)
-                .map({ file in
-                    if (file.size / 1e9) > 1 {
-                        if !booleanPrompt("Large file (> 1GB). Continue?") {
-                            throw ExitCode.success
-                        }
-                    }
-                    return file
-                })
         } else {
             continuation = periscope.restart().asObservable()
                 .ifEmpty(
@@ -73,6 +69,20 @@ public struct DownPeriscopeCLI: ParsableCommand {
         disposable = continuation
             .flatMap({ file in
                 periscope.download(file: file, to: destination)
+                    .filter { file in
+                        if allowLarge { return true }
+
+                        if (file.size / Int64(1e9)) > 1 {
+                            if booleanPrompt("Large file (> 1GB). Continue?") {
+                                allowLarge = true
+                            } else {
+                                throw ExitCode.success
+                            }
+                        }
+
+                        allowLarge = true
+                        return true
+                    }
             })
             .reduce(nil, accumulator: { (_: PeriscopeFile?, file: PeriscopeFile) in
                 progressBar.count = Int(file.progress?.totalUnitCount ?? 0)

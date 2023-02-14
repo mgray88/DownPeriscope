@@ -13,7 +13,7 @@ public struct PeriscopeFile {
     internal init(
         source: URL,
         destination: URL? = nil,
-        size: Double = 0.0,
+        size: Int64 = 0,
         progress: Progress? = nil,
         resumeData: Data? = nil
     ) {
@@ -26,7 +26,7 @@ public struct PeriscopeFile {
 
     public let source: URL
     public internal(set) var destination: URL?
-    public internal(set) var size: Double
+    public internal(set) var size: Int64
     public internal(set) var progress: Progress?
 
     public let resumeData: Data?
@@ -37,6 +37,7 @@ public struct PeriscopeFile {
 
     internal mutating func setProgress(_ progress: Progress) {
         self.progress = progress
+        self.size = progress.totalUnitCount
     }
 }
 

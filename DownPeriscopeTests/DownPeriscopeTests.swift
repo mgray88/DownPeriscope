@@ -29,7 +29,6 @@ final class DownPeriscopeTests: XCTestCase {
     func testValidateURLSuccess() throws {
         // Given
         let url = "http://speedtest.ftp.otenet.gr/files/test100k.db"
-        mockRepository.validateResponse = .just(PeriscopeFile(source: URL(string: url)!))
 
         // When
         let valid = sut.validate(source: url)
@@ -52,32 +51,6 @@ final class DownPeriscopeTests: XCTestCase {
         expect {
             try valid.toBlocking().single()
         }.to(throwError(PeriscopeError.invalidURL))
-    }
-
-    func testValidateNoConnection() throws {
-        // Given
-        mockRepository.validateResponse = .error(DataError.networkConnection)
-
-        // When
-        let valid = sut.validate(source: "https://www.IAmABanana.com")
-
-        // Then
-        expect {
-            try valid.toBlocking().single()
-        }.to(throwError(PeriscopeError.noConnection))
-    }
-
-    func testValidateNotFound() throws {
-        // Given
-        mockRepository.validateResponse = .error(DataError.invalidSourceURL)
-
-        // When
-        let valid = sut.validate(source: "https://SomeRandomUrlThatProbablyDoesNotExist.com/file.exe")
-
-        // Then
-        expect {
-            try valid.toBlocking().single()
-        }.to(throwError(PeriscopeError.notFound))
     }
 
 //    func testPerformanceExample() throws {

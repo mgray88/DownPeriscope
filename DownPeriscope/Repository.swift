@@ -31,11 +31,6 @@ extension DataError: LocalizedError {
 
 /// Interface for downloading a file from a valid URL
 public protocol Repository {
-    /// Validate on subscription that a given url exists and is downloadable.
-    /// - Parameter url: URL to validate
-    /// - Returns: A new ``PeriscopeFile`` to use for downloading
-    func validate(url: URL) -> Observable<PeriscopeFile>
-
     /// Download a given file
     /// - Parameter file: A valid ``PeriscopeFile`` returned from ``validate(url:)``
     /// - Returns: Continuous updates with ``PeriscopeFile.progress`` updated
@@ -73,32 +68,6 @@ public class DefaultRepository: Repository {
 
     public var incompleteDownload: URL? {
         inProgressFile?.source
-    }
-
-    public func validate(url: URL) -> Observable<PeriscopeFile> {
-        Observable.create { [weak self] observer in
-            guard let self else { return Disposables.create() }
-            let request = self.alamofire.request(url, method: .head)
-                .response(queue: .global()) { downloadResponse in
-                    guard let response = downloadResponse.response,
-                          downloadResponse.error == nil
-                    else {
-                        return observer.onError(DataError.invalidSourceURL)
-                    }
-                    if 200..<300 ~= response.statusCode {
-                        let size = response.value(forHTTPHeaderField: "Content-Length")?.toDouble()
-                        observer.onNext(PeriscopeFile(source: url, size: size ?? 0))
-                        observer.onCompleted()
-                    } else {
-                        observer.onError(DataError.invalidSourceURL)
-                    }
-                }
-                .resume()
-
-            return Disposables.create {
-                request.cancel()
-            }
-        }
     }
     
     public func download(file: PeriscopeFile) -> Observable<PeriscopeFile> {

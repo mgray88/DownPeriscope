@@ -50,15 +50,12 @@ public class Periscope {
     /// - Parameter source: A valid resource to download
     /// - Returns: An instance of ``PeriscopeFile`` for use with ``download(file:to:)``
     public func validate(source: String) -> Observable<PeriscopeFile> {
-        return Observable.deferred { [repo] in
+        return Observable.deferred {
             guard let url = URL(string: source) else {
                 return .error(PeriscopeError.invalidURL)
             }
 
-            return repo.validate(url: url)
-                .catch { error in
-                    return .error(PeriscopeError.notFound)
-                }
+            return .just(PeriscopeFile(source: url))
         }
     }
 
