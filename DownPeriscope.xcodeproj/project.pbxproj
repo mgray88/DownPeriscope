@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270BDAA3299D787B00FEEC0F /* RxNimble in Frameworks */ = {isa = PBXBuildFile; productRef = 270BDAA2299D787B00FEEC0F /* RxNimble */; };
 		272ED2E3298DC20A00AC4634 /* DownPeriscopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2E2298DC20A00AC4634 /* DownPeriscopeTests.swift */; };
 		272ED2ED298DC20A00AC4634 /* DownPeriscopeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2EC298DC20A00AC4634 /* DownPeriscopeUITests.swift */; };
 		272ED2EF298DC20A00AC4634 /* DownPeriscopeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272ED2EE298DC20A00AC4634 /* DownPeriscopeUITestsLaunchTests.swift */; };
@@ -164,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27A8912D2999A30B00E3FBEE /* RxRelay in Frameworks */,
+				270BDAA3299D787B00FEEC0F /* RxNimble in Frameworks */,
 				272ED355298F033600AC4634 /* Alamofire in Frameworks */,
 				27A8912F2999A30B00E3FBEE /* RxSwift in Frameworks */,
 			);
@@ -426,6 +428,7 @@
 				272ED354298F033600AC4634 /* Alamofire */,
 				27A8912C2999A30B00E3FBEE /* RxRelay */,
 				27A8912E2999A30B00E3FBEE /* RxSwift */,
+				270BDAA2299D787B00FEEC0F /* RxNimble */,
 			);
 			productName = DownPeriscope;
 			productReference = 272ED345298F015300AC4634 /* libDownPeriscope.a */;
@@ -474,6 +477,7 @@
 				2786FB4B298F248D00312F21 /* XCRemoteSwiftPackageReference "swift-system" */,
 				27A891262999A25500E3FBEE /* XCRemoteSwiftPackageReference "Nimble" */,
 				27A891292999A30B00E3FBEE /* XCRemoteSwiftPackageReference "RxSwift" */,
+				270BDAA1299D787B00FEEC0F /* XCRemoteSwiftPackageReference "RxNimble" */,
 			);
 			productRefGroup = 272ED2CE298DC20700AC4634 /* Products */;
 			projectDirPath = "";
@@ -939,6 +943,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		270BDAA1299D787B00FEEC0F /* XCRemoteSwiftPackageReference "RxNimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxNimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		272ED2FB298DC57800AC4634 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -982,6 +994,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		270BDAA2299D787B00FEEC0F /* RxNimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 270BDAA1299D787B00FEEC0F /* XCRemoteSwiftPackageReference "RxNimble" */;
+			productName = RxNimble;
+		};
 		272ED354298F033600AC4634 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 272ED2FB298DC57800AC4634 /* XCRemoteSwiftPackageReference "Alamofire" */;

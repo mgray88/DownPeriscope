@@ -37,6 +37,15 @@
       }
     },
     {
+      "identity" : "rxnimble",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RxSwiftCommunity/RxNimble",
+      "state" : {
+        "revision" : "4a0b2671f2d5fa3d7407485a56080221585321c9",
+        "version" : "6.1.0"
+      }
+    },
+    {
       "identity" : "rxswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift",
