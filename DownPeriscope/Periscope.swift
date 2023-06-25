@@ -5,6 +5,7 @@
 //  Created by Mike Gray on 2/12/23.
 //
 
+import Dispatch
 import Foundation
 import RxSwift
 
@@ -40,9 +41,20 @@ extension PeriscopeError: LocalizedError {
 public class Periscope {
 
     private let repo: Repository
+    private let queue: DispatchQueue
+    private let disposeBag = DisposeBag()
+    private let dispatchQueueScheduler: ImmediateSchedulerType
 
-    public init(repo: Repository = DefaultRepository()) {
+    public init(
+        repo: Repository = DefaultRepository(),
+        queue: DispatchQueue = .global(qos: .default)
+    ) {
         self.repo = repo
+        self.queue = queue
+        self.dispatchQueueScheduler = SerialDispatchQueueScheduler(
+            queue: queue,
+            internalSerialQueueName: "is.digital.Periscope"
+        )
     }
 
     /// Validate that a given source string can be parsed as a valid URL, and that the
@@ -57,6 +69,8 @@ public class Periscope {
 
             return .just(PeriscopeFile(source: url))
         }
+        .subscribe(on: dispatchQueueScheduler)
+        .observe(on: dispatchQueueScheduler)
     }
 
     /// If an incomplete download is detected, returns a ``PeriscopeFile`` for use with
@@ -71,6 +85,8 @@ public class Periscope {
             }
             return Disposables.create()
         }
+        .subscribe(on: dispatchQueueScheduler)
+        .observe(on: dispatchQueueScheduler)
     }
 
     /// Download a given file. Optionally download to a specific destination, otherwise will be
@@ -94,5 +110,18 @@ public class Periscope {
             .catch { error in
                 return .error(PeriscopeError.downloadError(underlying: error))
             }
+            .subscribe(on: dispatchQueueScheduler)
+            .observe(on: dispatchQueueScheduler)
+    }
+}
+
+extension Periscope {
+    public func validate(source: String) -> Bool {
+        queue.sync {
+            self.validate(source: source)
+                .subscribe()
+
+            return true
+        }
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Alamofire
+import Dispatch
 import Foundation
 import RxSwift
 
@@ -57,7 +58,10 @@ public class DefaultRepository: Repository {
         }
     }
 
-    public init(userDefaults: UserDefaults = UserDefaults.standard) {
+    public init(
+        userDefaults: UserDefaults = UserDefaults.standard,
+        queue: DispatchQueue = .global()
+    ) {
         self.userDefaults = userDefaults
         self.alamofire = Alamofire.Session.default
 
